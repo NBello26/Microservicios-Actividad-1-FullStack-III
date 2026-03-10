@@ -1,9 +1,12 @@
 package com.example.MicroserviciosActividad1.service;
 import java.util.List;
 
+import org.springframework.stereotype.Service;
+
 import com.example.MicroserviciosActividad1.model.Producto;
 import com.example.MicroserviciosActividad1.repository.ProductoRepository;
 
+@Service
 public class ProductService{
     public final ProductoRepository repo;
     public ProductService(ProductoRepository repo){
