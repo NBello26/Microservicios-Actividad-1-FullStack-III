@@ -30,6 +30,7 @@ public class ProductController {
     //guardar
     @PostMapping
     public Producto guardar(@RequestBody Producto producto){
+        System.out.println("Producto recibido: " + producto);
         return servicio.guardar(producto);
     }
     //buscar x id
